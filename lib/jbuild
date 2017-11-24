@@ -4,7 +4,7 @@
   (wrapped false)
   (modules (uri uri_re))
   (preprocess (pps (ppx_sexp_conv)))
-  (ocamlopt_flags (:standard -fno-thumb)))
+  (ocamlopt_flags (:standard -fno-thumb))))
 
 (library
  ((name        uri_top)
