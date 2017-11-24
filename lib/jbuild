@@ -4,10 +4,11 @@
   (wrapped false)
   (modules (uri uri_re))
   (preprocess (pps (ppx_sexp_conv)))
-  (libraries (sexplib re.posix stringext))))
+  (ocamlopt_flags (:standard -fno-thumb)))
 
 (library
  ((name        uri_top)
   (public_name uri.top)
   (modules (uri_top))
-  (libraries (uri compiler-libs.toplevel))))
+  (libraries (uri compiler-libs.toplevel))
+  (ocamlopt_flags (:standard -fno-thumb))))

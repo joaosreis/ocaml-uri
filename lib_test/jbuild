@@ -1,6 +1,7 @@
 (executables
  ((names (test_runner))
-  (libraries (uri uri_services oUnit))))
+  (libraries (uri uri_services oUnit))
+  (ocamlopt_flags (:standard -fno-thumb)))
 
 (alias
  ((name    runtest)

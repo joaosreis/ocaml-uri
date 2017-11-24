@@ -16,10 +16,12 @@
  ((name        uri_services)
   (public_name uri.services)
   (modules (uri_services))
-  (libraries (uri))))
+  (libraries (uri))
+  (ocamlopt_flags (:standard -fno-thumb))))
 
 (library
  ((name        uri_services_full)
   (public_name uri.services_full)
   (modules (uri_services_full))
-  (libraries (uri))))
+  (libraries (uri))
+  (ocamlopt_flags (:standard -fno-thumb))))
